@@ -1,9 +1,9 @@
 # Policies
 Peering Manager allows _routing policies_ to be defined. These policies can then be applied to:
-* Autonomous Systems
-* Internet Exchanges
-  * Internet Exchange Peering Sessions
-* BGP Groups
+* Autonomous Systems,
+* Internet Exchanges and
+  * Internet Exchange Peering Sessions,
+* BGP Groups and
   * Direct Peering Sessions
 
 First, these policies defined in Peering Manager must be exported via template to the router, then they need to be applied to prefixes received or announced.
@@ -35,6 +35,10 @@ First, these policies defined in Peering Manager must be exported via template t
 An idea would be to use _tags_ to mark which policies can be applied on which router platform.
 
 Alternatively the JSON _Config Context_ of the policy can be used to encode different policies for different platforms:
+
+!!!question Templates welcome
+    No template exists by now to render policies proposed here. Suggestion on encoding are very much welcome.
+
 ```JSON
 {
   "iosxr": {
@@ -53,3 +57,17 @@ Alternatively the JSON _Config Context_ of the policy can be used to encode diff
 }
 
 ```
+
+The result of processing this policy should look like:
+=== "Cisco IOS XR"
+    ```
+    route-policy example-policy
+      set local-preference 10000
+      pass
+    end-policy
+    ```
+=== "Cisco IOS"
+    ```
+    route-map example-map permit 100
+      set local-preference 10000
+    ```
