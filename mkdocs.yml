@@ -64,6 +64,8 @@ nav:
         - Writing Templates: "templating/index.md"
         - Jinja Filters: "templating/filters.md"
         - Exposed Variables: "templating/variables.md"
+        - Templating Tutorial:
+            - About: "templating/tutorial/index.md"
         - Examples:
             - Arista EOS: "templating/examples/arista-eos.md"
             - Cisco IOS XR: "templating/examples/cisco-iosxr.md"
