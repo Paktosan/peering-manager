@@ -66,6 +66,8 @@ nav:
         - Exposed Variables: "templating/variables.md"
         - Templating Tutorial:
             - About: "templating/tutorial/index.md"
+            - Policies: "templating/tutorial/policies.md"
+            - Autonomous Systems: "templating/tutorial/as-template.md"
         - Examples:
             - Arista EOS: "templating/examples/arista-eos.md"
             - Cisco IOS XR: "templating/examples/cisco-iosxr.md"
