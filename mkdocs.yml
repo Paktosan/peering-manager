@@ -69,6 +69,7 @@ nav:
             - BGP Communities: "templating/tutorial/communities.md"
             - Policies: "templating/tutorial/policies.md"
             - Autonomous Systems: "templating/tutorial/as-template.md"
+            - Using Tags: "templating/tutorial/tags.md"
         - Examples:
             - Arista EOS: "templating/examples/arista-eos.md"
             - Cisco IOS XR: "templating/examples/cisco-iosxr.md"
